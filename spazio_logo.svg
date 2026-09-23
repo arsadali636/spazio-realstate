@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 130" width="420" height="130">
+  <!-- White container background (matching screenshot card style) -->
+  <rect width="420" height="130" rx="12" fill="#ffffff" />
+  
+  <g transform="translate(15, 10)">
+    <!-- LEFT ICON: 3D Stacked Modular Containers -->
+    <!-- Top Container -->
+    <g id="top-container">
+      <!-- Top face -->
+      <polygon points="45,15 110,32 170,15 105,2" fill="#2d2d2d"/>
+      <!-- Left face -->
+      <polygon points="45,15 105,32 105,65 45,48" fill="#111111"/>
+      <!-- Right face -->
+      <polygon points="105,32 170,15 170,48 105,65" fill="#222222"/>
+      <!-- Window on left face -->
+      <polygon points="65,26 92,33 92,50 65,42" fill="#ffffff"/>
+    </g>
+    
+    <!-- Bottom Container -->
+    <g id="bottom-container">
+      <!-- Top face -->
+      <polygon points="18,52 90,38 155,54 83,68" fill="#333333"/>
+      <!-- Left face (front) -->
+      <polygon points="18,52 83,68 83,106 18,90" fill="#000000"/>
+      <!-- Door on left face -->
+      <polygon points="42,67 62,71 62,100 42,96" fill="#ffffff"/>
+      <!-- Right face -->
+      <polygon points="83,68 155,54 155,92 83,106" fill="#181818"/>
+      <!-- Window slits on right face -->
+      <polygon points="98,69 112,66 112,96 98,99" fill="#ffffff"/>
+      <polygon points="122,64 136,61 136,91 122,94" fill="#ffffff"/>
+    </g>
+
+    <!-- RIGHT SIDE: Architect illustration & Brand Name -->
+    <g transform="translate(175, 12)">
+      <!-- Top Divider line & Architect figure sketch -->
+      <line x1="0" y1="36" x2="200" y2="36" stroke="#111111" stroke-width="2.5"/>
+      
+      <!-- Architect carrying blueprints illustration (line art) -->
+      <g transform="translate(130, 2)" fill="none" stroke="#111111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Helmet/Hat -->
+        <path d="M 16,14 C 16,8 30,8 30,14 Z" fill="#ffffff"/>
+        <path d="M 12,14 L 34,14" />
+        <!-- Head -->
+        <circle cx="23" cy="18" r="4" fill="#ffffff"/>
+        <!-- Body & Outfit -->
+        <path d="M 17,23 L 29,23 L 32,34 L 14,34 Z" fill="#ffffff"/>
+        <!-- Rolled Blueprints held -->
+        <path d="M 5,22 Q 18,29 28,24" stroke-width="2.5"/>
+        <ellipse cx="5" cy="22" rx="2.5" ry="4" fill="#ffffff"/>
+        <path d="M 2,27 Q 15,34 25,29" stroke-width="2.5"/>
+        <ellipse cx="2" cy="27" rx="2.5" ry="4" fill="#ffffff"/>
+      </g>
+
+      <!-- Brand Text: SPAZIO -->
+      <text x="0" y="74" font-family="'Manrope', 'Arial Black', sans-serif" font-weight="900" font-size="42" fill="#E60000" letter-spacing="1">SPAZIO</text>
+      
+      <!-- Brand Text: ARCHITECTS -->
+      <text x="2" y="102" font-family="'Inter', 'Arial', sans-serif" font-weight="800" font-size="25" fill="#111111" letter-spacing="2.5">ARCHITECTS</text>
+    </g>
+  </g>
+</svg>
