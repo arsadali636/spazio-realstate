@@ -6,6 +6,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        about: resolve(__dirname, 'about/index.html'),
+        'bim-outsourcing': resolve(__dirname, 'bim-outsourcing/index.html'),
         architecture: resolve(__dirname, 'services/architecture/index.html'),
         'bim-revit': resolve(__dirname, 'services/bim-revit/index.html'),
         'cad-drafting': resolve(__dirname, 'services/cad-drafting/index.html'),
