@@ -1811,6 +1811,177 @@
             }
         }
 
+        /* =========================================================
+           PROJECT CATEGORIES SECTION
+        ========================================================= */
+        .project-categories-section {
+            background: #151515;
+            color: var(--white);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .categories-header-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .categories-header-wrap h2 {
+            color: var(--white);
+        }
+
+        .categories-header-wrap .lead {
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 520px;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .category-card {
+            background: #1d1d1d;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 36px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 240px;
+            text-decoration: none;
+            color: var(--white);
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 0%;
+            background: var(--accent);
+            transition: height 0.35s ease;
+        }
+
+        .category-card:hover {
+            background: #252525;
+            transform: translateY(-4px);
+            border-color: rgba(178, 154, 114, 0.4);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+
+        .category-card:hover::before {
+            height: 100%;
+        }
+
+        .category-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .category-num {
+            font-family: "Manrope", sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            letter-spacing: 1px;
+        }
+
+        .category-badge {
+            font-size: 9px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #888888;
+            font-weight: 600;
+        }
+
+        .category-card h3 {
+            font-size: 26px;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+            color: var(--white);
+            transition: color 0.35s ease;
+        }
+
+        .category-card:hover h3 {
+            color: var(--accent);
+        }
+
+        .category-card p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.65);
+            margin-bottom: 24px;
+        }
+
+        .category-card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 18px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .category-link-text {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--white);
+            transition: color 0.35s ease;
+        }
+
+        .category-card:hover .category-link-text {
+            color: var(--accent);
+        }
+
+        .category-arrow {
+            font-size: 18px;
+            color: var(--grey);
+            transition: transform 0.35s ease, color 0.35s ease;
+        }
+
+        .category-card:hover .category-arrow {
+            transform: translateX(6px);
+            color: var(--accent);
+        }
+
+        .full-width-category {
+            grid-column: 1 / -1;
+        }
+
+        .full-width-content-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            gap: 30px;
+        }
+
+        @media (max-width: 991px) {
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            .categories-header-wrap {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            .full-width-content-wrap {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
     </style>
 </head>
 
@@ -2710,10 +2881,14 @@
 
             </div>
 
-            <p class="lead">
-                A selection of architectural, interior, BIM,
-                documentation, and digital design work.
-            </p>
+            <div class="works-lead-wrap" style="max-width: 580px;">
+                <p class="lead" style="margin-bottom: 12px; font-weight: 500; color: #333333;">
+                    Our portfolio represents the intersection of architecture, interiors, BIM, documentation, and digital visualization.
+                </p>
+                <p class="lead" style="font-size: 15px; color: #666666; line-height: 1.6;">
+                    Explore selected projects and understand not only what was designed, but how the project was developed and delivered.
+                </p>
+            </div>
 
         </div>
 
@@ -2833,6 +3008,133 @@
 
     </div>
 
+</section>
+
+
+
+<!-- =========================================================
+     PROJECT CATEGORIES
+========================================================= -->
+<section class="section project-categories-section" id="categories">
+    <div class="container">
+
+        <div class="categories-header-wrap reveal">
+            <div>
+                <div class="eyebrow" style="color: var(--accent);">SECTORS & DOMAINS</div>
+                <h2 style="color: var(--white); font-size: clamp(36px, 4.5vw, 64px);">PROJECT CATEGORIES</h2>
+            </div>
+            <p class="lead">
+                Specialized architectural design, interior environments, BIM implementation, and technical production support tailored across key sector requirements.
+            </p>
+        </div>
+
+        <div class="categories-grid">
+
+            <!-- 1. RESIDENTIAL -->
+            <a href="/categories/residential/" class="category-card reveal">
+                <div class="category-card-header">
+                    <span class="category-num">01</span>
+                    <span class="category-badge">ARCHITECTURE & HOUSING</span>
+                </div>
+                <h3>RESIDENTIAL</h3>
+                <p>Homes, villas, apartments, row housing, and residential developments.</p>
+                <div class="category-card-footer">
+                    <span class="category-link-text">EXPLORE RESIDENTIAL</span>
+                    <span class="category-arrow">→</span>
+                </div>
+            </a>
+
+            <!-- 2. COMMERCIAL -->
+            <a href="/categories/commercial/" class="category-card reveal">
+                <div class="category-card-header">
+                    <span class="category-num">02</span>
+                    <span class="category-badge">OFFICE & RETAIL</span>
+                </div>
+                <h3>COMMERCIAL</h3>
+                <p>Offices, retail, mixed-use developments, and commercial spaces.</p>
+                <div class="category-card-footer">
+                    <span class="category-link-text">EXPLORE COMMERCIAL</span>
+                    <span class="category-arrow">→</span>
+                </div>
+            </a>
+
+            <!-- 3. HOSPITALITY -->
+            <a href="/categories/hospitality/" class="category-card reveal">
+                <div class="category-card-header">
+                    <span class="category-num">03</span>
+                    <span class="category-badge">HOTELS & LEISURE</span>
+                </div>
+                <h3>HOSPITALITY</h3>
+                <p>Hotels, restaurants, and hospitality environments.</p>
+                <div class="category-card-footer">
+                    <span class="category-link-text">EXPLORE HOSPITALITY</span>
+                    <span class="category-arrow">→</span>
+                </div>
+            </a>
+
+            <!-- 4. HEALTHCARE -->
+            <a href="/categories/healthcare/" class="category-card reveal">
+                <div class="category-card-header">
+                    <span class="category-num">04</span>
+                    <span class="category-badge">MEDICAL & WELLNESS</span>
+                </div>
+                <h3>HEALTHCARE</h3>
+                <p>Hospitals, clinics, and healthcare-related spaces.</p>
+                <div class="category-card-footer">
+                    <span class="category-link-text">EXPLORE HEALTHCARE</span>
+                    <span class="category-arrow">→</span>
+                </div>
+            </a>
+
+            <!-- 5. INTERIOR -->
+            <a href="/categories/interior/" class="category-card reveal">
+                <div class="category-card-header">
+                    <span class="category-num">05</span>
+                    <span class="category-badge">SPATIAL & VISUAL</span>
+                </div>
+                <h3>INTERIOR</h3>
+                <p>Residential, commercial, hospitality, and workplace interiors.</p>
+                <div class="category-card-footer">
+                    <span class="category-link-text">EXPLORE INTERIOR</span>
+                    <span class="category-arrow">→</span>
+                </div>
+            </a>
+
+            <!-- 6. BIM -->
+            <a href="/categories/bim/" class="category-card reveal">
+                <div class="category-card-header">
+                    <span class="category-num">06</span>
+                    <span class="category-badge">VIRTUAL DESIGN & CONST.</span>
+                </div>
+                <h3>BIM</h3>
+                <p>Architectural BIM, Revit production, coordination, and documentation.</p>
+                <div class="category-card-footer">
+                    <span class="category-link-text">EXPLORE BIM</span>
+                    <span class="category-arrow">→</span>
+                </div>
+            </a>
+
+            <!-- 7. INTERNATIONAL -->
+            <a href="/categories/international/" class="category-card reveal full-width-category">
+                <div class="category-card-header">
+                    <span class="category-num">07</span>
+                    <span class="category-badge">GLOBAL AEC OUTSOURCING</span>
+                </div>
+                <div class="full-width-content-wrap">
+                    <div>
+                        <h3 style="font-size: 28px; margin-bottom: 8px;">INTERNATIONAL</h3>
+                        <p style="margin-bottom: 0;">Projects and production support delivered for international AEC requirements.</p>
+                    </div>
+                    <div class="category-card-footer" style="border-top: none; padding-top: 0;">
+                        <span class="category-link-text">EXPLORE INTERNATIONAL SERVICES</span>
+                        <span class="category-arrow">→</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
 </section>
 
 
