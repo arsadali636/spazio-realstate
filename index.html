@@ -1538,33 +1538,44 @@
         .social-links-grid {
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 12px;
+            margin-top: 8px;
         }
 
         .social-link-item {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            color: #888;
-            font-size: 13px;
-            transition: var(--transition);
-            padding: 3px 0;
+            gap: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 15px;
+            font-weight: 600;
+            font-family: "Manrope", sans-serif;
+            transition: all 0.3s ease;
+            padding: 8px 14px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .social-link-item svg {
-            width: 18px;
-            height: 18px;
+            width: 24px;
+            height: 24px;
             flex-shrink: 0;
-            transition: transform var(--transition), color var(--transition);
+            transition: transform 0.3s ease, color 0.3s ease;
+            color: var(--accent);
         }
 
         .social-link-item:hover {
-            color: var(--white);
-            transform: translateX(4px);
+            color: #ffffff;
+            background: rgba(178, 154, 114, 0.15);
+            border-color: rgba(178, 154, 114, 0.4);
+            transform: translateX(6px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         .social-link-item:hover svg {
-            color: var(--accent);
+            color: #ffffff;
+            transform: scale(1.15);
         }
 
         .footer-brand p {
@@ -3958,6 +3969,126 @@
                     Yes. You can share project drawings, models,
                     point clouds, briefs, and required deliverables
                     for scope assessment.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- 6. FAQ -->
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                What BIM Levels of Detail (LOD) do you support?
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    We support LOD 100 through LOD 500 across Architectural, Structural, and MEP disciplines, including schematic design models, fabrication-ready models, clash-coordinated models, and as-built facility management models.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- 7. FAQ -->
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                What is your typical project turnaround time?
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Turnaround times depend on project scale and scope. Concept architectural drafts take 3–5 business days, while full BIM production sets are scheduled according to agreed milestone timelines.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- 8. FAQ -->
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                How do you handle client confidentiality and data security?
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    We sign formal Non-Disclosure Agreements (NDAs), utilize secure encrypted file transfer servers, restricted cloud storage access, and strict data protocols to safeguard all intellectual property.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- 9. FAQ -->
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Which software platforms and file formats do you deliver?
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    We work with Autodesk Revit, AutoCAD, Navisworks, Rhino 3D, 3ds Max, V-Ray, Enscape, and Lumion. Deliverables include native .RVT, .DWG, .IFC, .NWD, and high-resolution PDF sheet sets.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- 10. FAQ -->
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                Do you provide 3D visualization and VR walkthroughs?
+
+                <span class="faq-icon">
+                    +
+                </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Yes. We create photorealistic 3D exterior and interior renderings, 360-degree virtual VR walkthroughs, architectural animations, and marketing presentation materials.
                 </p>
 
             </div>
