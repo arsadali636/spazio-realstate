@@ -1032,23 +1032,36 @@
             gap: 10px;
             flex-wrap: wrap;
             margin-bottom: 40px;
+            padding-bottom: 8px;
         }
 
         .filter-btn {
-            padding: 12px 18px;
-            border: 1px solid #ddd;
-            background: transparent;
+            padding: 12px 22px;
+            border: 1px solid #d9d6cf;
+            background: #ffffff;
+            color: #444444;
             font-size: 10px;
-            letter-spacing: 1.5px;
+            font-weight: 600;
+            letter-spacing: 1.8px;
             text-transform: uppercase;
-            transition: var(--transition);
+            cursor: pointer;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
         }
 
-        .filter-btn.active,
         .filter-btn:hover {
-            background: var(--black);
-            color: var(--white);
-            border-color: var(--black);
+            background: #f4f0e6;
+            color: #111111;
+            border-color: #b29a72;
+            transform: translateY(-2px);
+        }
+
+        .filter-btn.active {
+            background: #111111;
+            color: #ffffff;
+            border-color: #111111;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
         }
 
         .portfolio-grid {
@@ -2967,7 +2980,7 @@
             </button>
 
             <button class="filter-btn" data-filter="bim">
-                BIM
+                BIM & Revit
             </button>
 
             <button class="filter-btn" data-filter="interior">
@@ -2982,89 +2995,93 @@
                 Residential
             </button>
 
+            <button class="filter-btn" data-filter="hospitality">
+                Hospitality
+            </button>
+
+            <button class="filter-btn" data-filter="healthcare">
+                Healthcare
+            </button>
+
+            <button class="filter-btn" data-filter="international">
+                International
+            </button>
+
         </div>
 
 
         <div class="portfolio-grid">
 
-
-            <div class="project reveal"
-                 data-category="architecture residential">
-
-                <img
-                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=90"
-                    alt="Residential architecture">
-
+            <!-- 1. Residential Villa -->
+            <div class="project reveal" data-category="architecture residential">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=90" alt="Bespoke Residential Villa Architecture">
                 <div class="project-overlay">
-
-                    <h3>Residential Design</h3>
-
-                    <p>
-                        Architecture / Residential
-                    </p>
-
+                    <h3>Residential Villa Architecture</h3>
+                    <p>Architecture / Residential</p>
                 </div>
-
             </div>
 
-
-            <div class="project reveal"
-                 data-category="commercial architecture">
-
-                <img
-                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=90"
-                    alt="Commercial architecture">
-
+            <!-- 2. Commercial Tower -->
+            <div class="project reveal" data-category="commercial architecture international">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=90" alt="Commercial Office Tower">
                 <div class="project-overlay">
-
-                    <h3>Commercial Architecture</h3>
-
-                    <p>
-                        Architecture / Commercial
-                    </p>
-
+                    <h3>Metropolitan Commercial Tower</h3>
+                    <p>Architecture / Commercial</p>
                 </div>
-
             </div>
 
-
-            <div class="project reveal"
-                 data-category="bim">
-
-                <img
-                    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=90"
-                    alt="BIM construction project">
-
+            <!-- 3. BIM Development -->
+            <div class="project reveal" data-category="bim international">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=90" alt="LOD 400 BIM Construction">
                 <div class="project-overlay">
-
-                    <h3>BIM Development</h3>
-
-                    <p>
-                        BIM / Revit / Documentation
-                    </p>
-
+                    <h3>LOD 400 BIM & Revit Model</h3>
+                    <p>BIM / Revit / Documentation</p>
                 </div>
-
             </div>
 
-
-            <div class="project reveal"
-                 data-category="interior">
-
-                <img
-                    src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=90"
-                    alt="Interior design">
-
+            <!-- 4. Luxury Interior -->
+            <div class="project reveal" data-category="interior residential">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=90" alt="Interior Architecture Design">
                 <div class="project-overlay">
-
-                    <h3>Interior Design</h3>
-
-                    <p>
-                        Interior / Visualization
-                    </p>
-
+                    <h3>Luxury Penthouse Interior</h3>
+                    <p>Interior / Spatial Design</p>
                 </div>
+            </div>
 
+            <!-- 5. Hospitality Resort -->
+            <div class="project reveal" data-category="hospitality architecture commercial">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=90" alt="Boutique Hotel & Resort">
+                <div class="project-overlay">
+                    <h3>Boutique Hotel & Resort</h3>
+                    <p>Hospitality / Resort Architecture</p>
+                </div>
+            </div>
+
+            <!-- 6. Healthcare Center -->
+            <div class="project reveal" data-category="healthcare bim">
+                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1400&q=90" alt="Healthcare Center & Medical BIM">
+                <div class="project-overlay">
+                    <h3>Medical Facility & Healthcare BIM</h3>
+                    <p>Healthcare / Medical Planning</p>
+                </div>
+            </div>
+
+            <!-- 7. International AEC Support -->
+            <div class="project reveal" data-category="international bim architecture">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=90" alt="Global AEC Production Support">
+                <div class="project-overlay">
+                    <h3>Global AEC Technical Documentation</h3>
+                    <p>International / Production Support</p>
+                </div>
+            </div>
+
+            <!-- 8. Corporate Workplace Interior -->
+            <div class="project reveal" data-category="interior commercial">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=90" alt="Workplace Interior Architecture">
+                <div class="project-overlay">
+                    <h3>Executive Workplace Interior</h3>
+                    <p>Interior / Workplace Design</p>
+                </div>
             </div>
 
         </div>
